@@ -1,12 +1,15 @@
+const accountText = '账号登录'
+const qrcodeText = '扫码登录'
+
 export const loginTypes = {
   account: {
-    title: '账号登录',
-    tip: '扫码登录',
+    title: accountText,
+    tip: qrcodeText,
     className: 'account'
   },
   qrcode: {
-    title: '扫码登录',
-    tip: '账号登录',
+    title: qrcodeText,
+    tip: accountText,
     className: 'qrcode'
   }
 }
