@@ -1,0 +1,58 @@
+.navigation-container {
+  height: 60px;
+  background: rgb(40, 44, 52);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 980px;
+    height: 100%;
+    &__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 20px;
+      color: #61dafb;
+      span {
+        margin-left: 10px;
+      }
+    }
+    &__menu {
+      .ant-menu-horizontal {
+        line-height: 61px;
+      }
+      .ant-menu {
+        background: rgb(40, 44, 52);
+        color: #fff;
+        font-size: 18px;
+        font-weight: 100;
+      }
+      .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover {
+        color: #61dafb;
+      }
+      .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after {
+        border-bottom: none;
+      }
+      .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected {
+        color: #61dafb;
+      }
+      .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after {
+        border-bottom: 3px solid #61dafb;
+      }
+    }
+    &__setting {
+      .ant-dropdown-trigger {
+        display: inline-block;
+        color: #fff;
+        font-size: 18px;
+        height: 100%;
+        line-height: 60px;
+      }
+    }
+  }
+}
