@@ -40,6 +40,7 @@ const Qrcode: React.FC<IQrcodeProps> = (props) => {
           <span>请打开</span>
           <span style={{ color: '#538ff4', padding: '0 3px' }}>微信</span>
           <span>扫一扫登录</span>
+          <span>（开发中，敬请期待...）</span>
         </p>
         {loading ? (
           <div className="qrcode-login__loading">
