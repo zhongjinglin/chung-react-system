@@ -1,11 +1,12 @@
 import React from 'react'
 import './App.less'
-import Login from './pages/Login'
+// import Login from './pages/Login'
+import Navigation from './layouts/Navigation'
 
 const App = () => {
   return (
     <React.Fragment>
-      <Login />
+      <Navigation />
     </React.Fragment>
   )
 }
