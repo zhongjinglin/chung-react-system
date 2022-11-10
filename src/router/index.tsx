@@ -13,19 +13,19 @@ import about from './modules/about'
 const routerArray: RouteObject[] = combineAllRoutes([home, blog, about])
 
 const routes: RouteObject[] = [
-  {
-    path: '/',
-    element: <Navigate to="/login" />
-  },
-  {
-    path: '/login',
-    element: <Login />,
-    meta: {
-      title: '登录页面',
-      key: 'login'
-    }
-  },
-  ...routerArray
+	{
+		path: '/',
+		element: <Navigate to="/login" />
+	},
+	{
+		path: '/login',
+		element: <Login />,
+		meta: {
+			title: '登录页面',
+			key: 'login'
+		}
+	},
+	...routerArray
 ]
 
 const Routes = () => useRoutes(routes)

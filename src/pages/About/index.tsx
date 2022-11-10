@@ -8,11 +8,11 @@
 import React from 'react'
 
 const About: React.FC = () => {
-  return (
-    <div className="about-container">
-      <span>hello about...</span>
-    </div>
-  )
+	return (
+		<div className="about-container">
+			<span>hello about...</span>
+		</div>
+	)
 }
 
 export default About

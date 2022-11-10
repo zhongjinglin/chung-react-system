@@ -5,7 +5,7 @@ const SERVER_HOST = '0.0.0.0'
 const SERVER_PORT = 9000
 
 module.exports = {
-  ROOT_PATH,
-  SERVER_HOST,
-  SERVER_PORT
+	ROOT_PATH,
+	SERVER_HOST,
+	SERVER_PORT
 }

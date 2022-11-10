@@ -8,11 +8,11 @@
 import React from 'react'
 
 const Blog: React.FC = () => {
-  return (
-    <div className="blog-container">
-      <span>hello blog...</span>
-    </div>
-  )
+	return (
+		<div className="blog-container">
+			<span>hello blog...</span>
+		</div>
+	)
 }
 
 export default Blog

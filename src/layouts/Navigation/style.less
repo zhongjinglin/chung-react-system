@@ -1,64 +1,64 @@
 .navigation-container {
-  height: 60px;
-  background: rgb(40, 44, 52);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  &__wrap {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    &__logo {
-      width: 160px;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      font-weight: 700;
-      font-size: 20px;
-      color: #61dafb;
-      padding-left: 20px;
-      span {
-        margin-left: 10px;
-      }
-    }
-    &__menu {
-      flex: 1;
-      .ant-menu-horizontal {
-        line-height: 60px;
-        border-bottom: none;
-      }
-      .ant-menu {
-        background: rgb(40, 44, 52);
-        color: #fff;
-        font-size: 18px;
-        font-weight: 100;
-      }
-      .ant-menu-horizontal:not(.ant-menu-dark) {
-        .ant-menu-item:hover,
-        .ant-menu-item-active,
-        .ant-menu-item-selected {
-          color: #61dafb;
-          &::after {
-            color: #61dafb;
-            border-bottom: 3px solid #61dafb;
-          }
-        }
-      }
-    }
-    &__setting {
-      width: 160px;
-      height: 100%;
-      text-align: right;
-      padding-right: 20px;
-      .ant-dropdown-trigger {
-        display: inline-block;
-        color: #fff;
-        font-size: 18px;
-        height: 100%;
-        line-height: 60px;
-      }
-    }
-  }
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 60px;
+	color: #ffffff;
+	background: rgb(40 44 52);
+	&__wrap {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		&__logo {
+			display: flex;
+			align-items: center;
+			width: 160px;
+			height: 100%;
+			padding-left: 20px;
+			font-size: 20px;
+			font-weight: 700;
+			color: #61dafb;
+			span {
+				margin-left: 10px;
+			}
+		}
+		&__menu {
+			flex: 1;
+			.ant-menu-horizontal {
+				line-height: 60px;
+				border-bottom: none;
+			}
+			.ant-menu {
+				font-size: 18px;
+				font-weight: 100;
+				color: #ffffff;
+				background: rgb(40 44 52);
+			}
+			.ant-menu-horizontal:not(.ant-menu-dark) {
+				.ant-menu-item:hover,
+				.ant-menu-item-active,
+				.ant-menu-item-selected {
+					color: #61dafb;
+					&::after {
+						color: #61dafb;
+						border-bottom: 3px solid #61dafb;
+					}
+				}
+			}
+		}
+		&__setting {
+			width: 160px;
+			height: 100%;
+			padding-right: 20px;
+			text-align: right;
+			.ant-dropdown-trigger {
+				display: inline-block;
+				height: 100%;
+				font-size: 18px;
+				line-height: 60px;
+				color: #ffffff;
+			}
+		}
+	}
 }

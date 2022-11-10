@@ -11,14 +11,14 @@ import './style.less'
 import { Outlet } from 'react-router-dom'
 
 const BaseLayout: React.FC = () => {
-  return (
-    <div className="base-layout-container">
-      <Navigation />
-      <section className="base-layout-container__content">
-        <Outlet />
-      </section>
-    </div>
-  )
+	return (
+		<div className="base-layout-container">
+			<Navigation />
+			<section className="base-layout-container__content">
+				<Outlet />
+			</section>
+		</div>
+	)
 }
 
 export default BaseLayout

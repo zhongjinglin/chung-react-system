@@ -8,11 +8,11 @@
 import React from 'react'
 
 const Home: React.FC = () => {
-  return (
-    <div className="home-container">
-      <span>hello Home...</span>
-    </div>
-  )
+	return (
+		<div className="home-container">
+			<span>hello Home...</span>
+		</div>
+	)
 }
 
 export default Home

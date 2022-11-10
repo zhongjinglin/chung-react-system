@@ -5,11 +5,9 @@ import { RouteObject } from '../typings'
  * @param routerArray
  * @returns
  */
-export function combineAllRoutes(
-  routerArray: Array<Array<RouteObject>>
-): RouteObject[] {
-  return routerArray.reduce((acc, item) => {
-    acc = acc.concat(item)
-    return acc
-  }, [])
+export function combineAllRoutes(routerArray: Array<Array<RouteObject>>): RouteObject[] {
+	return routerArray.reduce((acc, item) => {
+		acc = acc.concat(item)
+		return acc
+	}, [])
 }

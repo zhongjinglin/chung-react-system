@@ -8,11 +8,11 @@
 import React from 'react'
 
 const Template: React.FC = () => {
-  return (
-    <div className="template-container">
-      <span>hello template...</span>
-    </div>
-  )
+	return (
+		<div className="template-container">
+			<span>hello template...</span>
+		</div>
+	)
 }
 
 export default Template
