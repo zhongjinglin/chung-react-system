@@ -10,34 +10,12 @@ import { Menu, Dropdown, Space } from 'antd'
 import { DownOutlined } from '@ant-design/icons'
 import type { MenuProps } from 'antd'
 import { menus } from './data'
+import DropdownImtes from './DropdownImtes'
 import reactImg from '../../assets/images/common/react.png'
 import './style.less'
 
-const items: MenuProps['items'] = [
-  {
-    label: (
-      <a target="_blank" href="https://react.docschina.org">
-        React 官方中文文档
-      </a>
-    ),
-    key: '1'
-  },
-  {
-    label: (
-      <a target="_blank" href="https://pro.ant.design">
-        Ant Design Pro
-      </a>
-    ),
-    key: '2'
-  },
-  {
-    label: '退出登录',
-    key: '3'
-  }
-]
-
 const Navigation: React.FC = () => {
-  const [current, setCurrent] = useState('blog')
+  const [current, setCurrent] = useState('home')
 
   const onClick: MenuProps['onClick'] = (e) => {
     console.log('click ', e)
@@ -60,7 +38,7 @@ const Navigation: React.FC = () => {
           />
         </div>
         <div className="navigation-container__wrap__setting">
-          <Dropdown menu={{ items }}>
+          <Dropdown menu={{ items: DropdownImtes }}>
             <a onClick={(e) => e.preventDefault()}>
               <Space>
                 admin

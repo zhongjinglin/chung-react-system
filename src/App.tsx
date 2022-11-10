@@ -1,14 +1,16 @@
 import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import { ConfigProvider } from 'antd'
+import Router from './router'
 import './App.less'
-// import Login from './pages/Login'
-// import Navigation from './layouts/Navigation'
-import BaseLayout from './layouts/BaseLayout'
 
 const App = () => {
   return (
-    <React.Fragment>
-      <BaseLayout />
-    </React.Fragment>
+    <BrowserRouter>
+      <ConfigProvider>
+        <Router />
+      </ConfigProvider>
+    </BrowserRouter>
   )
 }
 
