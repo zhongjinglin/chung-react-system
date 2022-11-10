@@ -50,7 +50,7 @@ const Qrcode: React.FC<IQrcodeProps> = props => {
 					<div className="qrcode-login__img"></div>
 				)}
 			</div>
-			<Row justify="center" align="middle" style={{ marginTop: '30px' }}>
+			<Row justify="center" align="middle" style={{ marginTop: '30px', fontSize: '14px' }}>
 				<a type="link" onClick={() => props.setLoginType('account')}>
 					密码登录
 				</a>
