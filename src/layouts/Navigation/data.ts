@@ -6,11 +6,11 @@ export const menus: MenuProps['items'] = [
 		key: 'home'
 	},
 	{
-		label: '博客',
+		label: '博客管理',
 		key: 'blog'
 	},
 	{
-		label: '关于我',
+		label: '关于',
 		key: 'about'
 	}
 ]
