@@ -6,11 +6,14 @@
  */
 
 import React from 'react'
+import List from './components/List'
+import Search from './components/Search'
 
 const Blog: React.FC = () => {
 	return (
 		<div className="blog-container">
-			<span>hello blog...</span>
+			<Search />
+			<List />
 		</div>
 	)
 }

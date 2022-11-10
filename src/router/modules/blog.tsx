@@ -1,11 +1,11 @@
 import React from 'react'
-import { LayoutIndex } from '../constant'
+import BaseLayout from '../../layouts/BaseLayout'
 import Blog from '../../pages/Blog'
 import { RouteObject } from '../typings'
 
 const blog: RouteObject[] = [
 	{
-		element: <LayoutIndex />,
+		element: <BaseLayout />,
 		children: [
 			{
 				path: '/blog',

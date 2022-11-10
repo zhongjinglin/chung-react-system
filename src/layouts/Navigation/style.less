@@ -12,19 +12,20 @@
 		height: 100%;
 		&__logo {
 			display: flex;
+			flex: 1;
 			align-items: center;
-			width: 160px;
+			justify-content: end;
 			height: 100%;
-			padding-left: 20px;
 			font-size: 20px;
 			font-weight: 700;
 			color: #61dafb;
 			span {
 				margin-left: 10px;
+				margin-right: 20px;
 			}
 		}
 		&__menu {
-			flex: 1;
+			width: 1000px;
 			.ant-menu-horizontal {
 				line-height: 60px;
 				border-bottom: none;
@@ -34,8 +35,16 @@
 				font-weight: 100;
 				color: #ffffff;
 				background: rgb(40 44 52);
-			}
+			}			
 			.ant-menu-horizontal:not(.ant-menu-dark) {
+				.ant-menu-item {
+					&:first-child {
+						padding-left: 0;
+						&::after {
+							left: 0;
+						}
+					}
+				}
 				.ant-menu-item:hover,
 				.ant-menu-item-active,
 				.ant-menu-item-selected {
@@ -48,16 +57,15 @@
 			}
 		}
 		&__setting {
-			width: 160px;
+			flex: 1;
 			height: 100%;
-			padding-right: 20px;
-			text-align: right;
 			.ant-dropdown-trigger {
 				display: inline-block;
 				height: 100%;
 				font-size: 18px;
 				line-height: 60px;
 				color: #ffffff;
+				margin-left: 20px;
 			}
 		}
 	}

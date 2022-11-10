@@ -8,7 +8,7 @@ const DropdownImtes: MenuProps['items'] = [
 				React 官方中文文档
 			</a>
 		),
-		key: '1'
+		key: 'react'
 	},
 	{
 		label: (
@@ -16,11 +16,11 @@ const DropdownImtes: MenuProps['items'] = [
 				Ant Design Pro
 			</a>
 		),
-		key: '2'
+		key: 'antd-pro'
 	},
 	{
 		label: '退出登录',
-		key: '3'
+		key: 'login-out'
 	}
 ]
 

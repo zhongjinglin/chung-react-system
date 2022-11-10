@@ -10,14 +10,6 @@ export const menus: MenuProps['items'] = [
 		key: 'blog'
 	},
 	{
-		label: '快递查询',
-		key: 'express'
-	},
-	{
-		label: '天气',
-		key: 'weather'
-	},
-	{
 		label: '关于我',
 		key: 'about'
 	}

@@ -7,12 +7,11 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import { Row, Divider, Spin } from 'antd'
+import type { Loading } from '../typings'
 
 interface IQrcodeProps {
 	setLoginType: Function
 }
-
-type Loading = true | false
 
 const Qrcode: React.FC<IQrcodeProps> = props => {
 	const [loading, setLoading] = useState<Loading>(true)

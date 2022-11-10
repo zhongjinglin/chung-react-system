@@ -1,11 +1,11 @@
 import React from 'react'
-import { LayoutIndex } from '../constant'
+import BaseLayout from '../../layouts/BaseLayout'
 import About from '../../pages/About'
 import { RouteObject } from '../typings'
 
 const about: RouteObject[] = [
 	{
-		element: <LayoutIndex />,
+		element: <BaseLayout />,
 		children: [
 			{
 				path: '/about',

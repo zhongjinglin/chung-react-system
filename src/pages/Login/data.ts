@@ -1,3 +1,8 @@
+export const userInfo = {
+	account: 'admin',
+	password: '123'
+}
+
 const accountText = '账号登录'
 const qrcodeText = '扫码登录'
 

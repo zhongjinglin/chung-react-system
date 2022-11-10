@@ -7,8 +7,8 @@
 
 import React, { useState } from 'react'
 import { Tooltip } from 'antd'
-import Account from './Account'
-import Qrcode from './Qrcode'
+import Account from './components/Account'
+import Qrcode from './components/Qrcode'
 import { loginTypes } from './data'
 import './style.less'
 

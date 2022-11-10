@@ -9,17 +9,28 @@ import React, { useState } from 'react'
 import { Menu, Dropdown, Space } from 'antd'
 import { DownOutlined } from '@ant-design/icons'
 import type { MenuProps } from 'antd'
-import { menus } from './data'
+import { useNavigate } from 'react-router-dom'
+import { LOGIN_URL } from '../../global/constant'
 import DropdownImtes from './DropdownImtes'
+import { menus } from './data'
 import reactImg from '../../assets/images/common/react.png'
 import './style.less'
 
 const Navigation: React.FC = () => {
 	const [current, setCurrent] = useState('home')
+	const navigate = useNavigate()
 
-	const onClick: MenuProps['onClick'] = e => {
-		console.log('click ', e)
+	// 点击导航
+	const onNavClick: MenuProps['onClick'] = e => {
 		setCurrent(e.key)
+		navigate(`/${e.key}`)
+	}
+
+	// 点击设置
+	const onSettingClick: MenuProps['onClick'] = ({ key }) => {
+		if (key === 'login-out') {
+			navigate(LOGIN_URL)
+		}
 	}
 
 	return (
@@ -30,10 +41,10 @@ const Navigation: React.FC = () => {
 					<span>React</span>
 				</div>
 				<div className="navigation-container__wrap__menu">
-					<Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={menus} />
+					<Menu onClick={onNavClick} selectedKeys={[current]} mode="horizontal" items={menus} />
 				</div>
 				<div className="navigation-container__wrap__setting">
-					<Dropdown menu={{ items: DropdownImtes }}>
+					<Dropdown menu={{ items: DropdownImtes, onClick: onSettingClick }}>
 						<a onClick={e => e.preventDefault()}>
 							<Space>
 								admin
