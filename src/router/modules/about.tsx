@@ -1,6 +1,6 @@
 import React from 'react'
-import BaseLayout from '../../layouts/BaseLayout'
-import About from '../../pages/About'
+import BaseLayout from '@/layouts/BaseLayout'
+import LazyLoad from '../LazyLoad'
 import { RouteObject } from '../typings'
 
 const about: RouteObject[] = [
@@ -9,7 +9,7 @@ const about: RouteObject[] = [
 		children: [
 			{
 				path: '/about',
-				element: <About />,
+				element: LazyLoad(React.lazy(() => import(/* webpackChunkName: "about" */ '@/pages/About'))),
 				meta: {
 					title: '关于我',
 					key: 'about'

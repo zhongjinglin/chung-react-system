@@ -8,12 +8,12 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Button, Checkbox, Form, Input, Row, Divider, notification } from 'antd'
-import type { LoginForm, Loading } from '../../typings'
+import type { LoginForm } from '../../typings'
 import { userInfo } from '../../data'
-import { HOME_URL } from '../../../../global/constant'
+import { HOME_URL } from '@/global/constant'
 
 const Account = () => {
-	const [loading, setLoading] = useState<Loading>(false)
+	const [loading, setLoading] = useState<boolean>(false)
 	const navigate = useNavigate()
 
 	const onFinish = (loginForm: LoginForm) => {

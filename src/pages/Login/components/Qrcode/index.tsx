@@ -7,14 +7,13 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import { Row, Divider, Spin } from 'antd'
-import type { Loading } from '../typings'
 
 interface IQrcodeProps {
 	setLoginType: Function
 }
 
 const Qrcode: React.FC<IQrcodeProps> = props => {
-	const [loading, setLoading] = useState<Loading>(true)
+	const [loading, setLoading] = useState<boolean>(true)
 
 	const timer = useRef<NodeJS.Timer>()
 

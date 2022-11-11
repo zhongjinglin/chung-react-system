@@ -10,10 +10,10 @@ import { Menu, Dropdown, Space } from 'antd'
 import { DownOutlined } from '@ant-design/icons'
 import type { MenuProps } from 'antd'
 import { useNavigate } from 'react-router-dom'
-import { LOGIN_URL } from '../../global/constant'
+import { LOGIN_URL } from '@/global/constant'
 import DropdownImtes from './DropdownImtes'
 import { menus } from './data'
-import reactImg from '../../assets/images/common/react.png'
+import reactImg from '@/assets/images/common/react.png'
 import './style.less'
 
 const Navigation: React.FC = () => {

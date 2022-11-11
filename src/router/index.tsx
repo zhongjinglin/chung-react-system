@@ -2,15 +2,15 @@ import React from 'react'
 import { Navigate, useRoutes } from 'react-router-dom'
 import type { RouteObject } from './typings'
 import { combineAllRoutes } from './utils'
-import Login from '../pages/Login'
+import Login from '@/pages/Login'
 
 // 导入所有router
-import home from './modules/home'
-import blog from './modules/blog'
-import about from './modules/about'
+import Home from './modules/Home'
+import Blog from './modules/Blog'
+import About from './modules/About'
 
 // 处理路由
-const routerArray: RouteObject[] = combineAllRoutes([home, blog, about])
+const routerArray: RouteObject[] = combineAllRoutes([Home, Blog, About])
 
 const routes: RouteObject[] = [
 	{

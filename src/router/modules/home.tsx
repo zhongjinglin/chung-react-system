@@ -1,6 +1,6 @@
 import React from 'react'
-import BaseLayout from '../../layouts/BaseLayout'
-import Home from '../../pages/Home'
+import BaseLayout from '@/layouts/BaseLayout'
+import LazyLoad from '../LazyLoad'
 import { RouteObject } from '../typings'
 
 const home: RouteObject[] = [
@@ -9,7 +9,7 @@ const home: RouteObject[] = [
 		children: [
 			{
 				path: '/home',
-				element: <Home />,
+				element: LazyLoad(React.lazy(() => import(/* webpackChunkName: "home" */ '@/pages/Home'))),
 				meta: {
 					title: '首页',
 					key: 'home'
